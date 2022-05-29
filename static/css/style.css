@@ -26,6 +26,10 @@ body#reference-body {
     position: relative;
     margin-top: -100px;
 }
+body#gallery-body {
+    position: relative;
+    margin-top: -100px;
+}
 .menu {
     list-style: none;
     text-align: center;
@@ -38,17 +42,24 @@ body#reference-body {
     padding: 20px;
     margin: 0px 15px;
 }
+.menu a:link, .menu a:active, .menu a:visited {
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover {
+    font-weight: bold;
+}
 #about-li {
-    text-shadow: 0px 6px #fcf5bc;
+    text-shadow: 0px 6px #fbf19f;
 }
 #skills-li {
-    text-shadow: 0px 6px #CEF4DD;
+    text-shadow: 0px 6px #a2fdc6;
 }
 #work-li {
-    text-shadow: 0px 6px #B0E1FA;
+    text-shadow: 0px 6px #a1defd;
 }
 #projects-li {
-    text-shadow: 0px 6px #E6C4FA;
+    text-shadow: 0px 6px #e1b6fb;
 }
 #reference-li {
     text-shadow: 0px 6px #FFA6D0;
@@ -57,15 +68,37 @@ body#reference-body {
     position: relative;
     height: 750px;
 }
-#main-skills, #main-work, #main-projects, #main-reference{
+#main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
     position: relative;
-    height: 850px;
+    height: 800px;
 }
 #center-bg {
     text-align: center;
     margin: 130px 0px;
     animation: center-bg 5s ease;
     position: relative;
+}
+#center-menu {
+    margin: 0% 20%;
+    margin-top: 75px;
+}
+#center-menu ul {
+    font-size: 19px;
+    width: 100%;
+    list-style: none;
+    font-weight: bold;
+}
+#center-menu ul ul {
+    font-size: 15px;
+    font-weight: normal;
+    padding: 7px 35px;
+}
+#center-menu ul ul li {
+    padding: 3px 0px;
+}
+#res-a {
+    text-decoration: none;
+    color: #7bccf5;
 }
 #center-txt {
     position: absolute;
