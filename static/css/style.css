@@ -1,12 +1,28 @@
 html{
     font-family: 'Montserrat', sans-serif;
 }
-body {
-    /* background-image: url(../../images/home.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: 1709px 936px; */
+body#about-body {
     background-color: #FFFEF3;
+    position: relative;
+    margin-top: -100px;
+}
+body#skills-body {
+    background-color: #F2FFF7;
+    position: relative;
+    margin-top: -100px;
+}
+body#work-body {
+    background-color: #EDF9FF;
+    position: relative;
+    margin-top: -100px;
+}
+body#projects-body {
+    background-color: #F9F0FF;
+    position: relative;
+    margin-top: -100px;
+}
+body#reference-body {
+    background-color: #FFEDF5;
     position: relative;
     margin-top: -100px;
 }
@@ -25,12 +41,25 @@ body {
 #about-li {
     text-shadow: 0px 6px #fcf5bc;
 }
+#skills-li {
+    text-shadow: 0px 6px #CEF4DD;
+}
+#work-li {
+    text-shadow: 0px 6px #B0E1FA;
+}
+#projects-li {
+    text-shadow: 0px 6px #E6C4FA;
+}
+#reference-li {
+    text-shadow: 0px 6px #FFA6D0;
+}
 #main-home {
     position: relative;
     height: 750px;
 }
-.foot{
-    text-align: center;
+#main-skills, #main-work, #main-projects, #main-reference{
+    position: relative;
+    height: 850px;
 }
 #center-bg {
     text-align: center;
@@ -45,7 +74,7 @@ body {
     top: -3%;
     font-size: 21px;
 }
-img {
+#center-bg img {
     border-radius: 20%;
 }
 .icons{
@@ -95,7 +124,7 @@ img {
      50% { transform: rotate(10.0deg) }
      60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
     100% { transform: rotate( 0.0deg) }
-  }
+}
 @keyframes yellow-circle {
     from{
         transform: rotateZ(0deg);
