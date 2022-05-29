@@ -1,0 +1,163 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body#about-body {
+    background-color: #FFFEF3;
+    position: relative;
+    margin-top: -100px;
+}
+body#skills-body {
+    background-color: #F2FFF7;
+    position: relative;
+    margin-top: -100px;
+}
+body#work-body {
+    background-color: #EDF9FF;
+    position: relative;
+    margin-top: -100px;
+}
+body#projects-body {
+    background-color: #F9F0FF;
+    position: relative;
+    margin-top: -100px;
+}
+body#reference-body {
+    background-color: #FFEDF5;
+    position: relative;
+    margin-top: -100px;
+}
+.menu {
+    list-style: none;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 27px;
+    text-shadow: 0px 5px #bdbdbdba;
+}
+.menu li {
+    display: inline-block;
+    padding: 20px;
+    margin: 0px 15px;
+}
+#about-li {
+    text-shadow: 0px 6px #fcf5bc;
+}
+#skills-li {
+    text-shadow: 0px 6px #CEF4DD;
+}
+#work-li {
+    text-shadow: 0px 6px #B0E1FA;
+}
+#projects-li {
+    text-shadow: 0px 6px #E6C4FA;
+}
+#reference-li {
+    text-shadow: 0px 6px #FFA6D0;
+}
+#main-home {
+    position: relative;
+    height: 750px;
+}
+#main-skills, #main-work, #main-projects, #main-reference{
+    position: relative;
+    height: 850px;
+}
+#center-bg {
+    text-align: center;
+    margin: 130px 0px;
+    animation: center-bg 5s ease;
+    position: relative;
+}
+#center-txt {
+    position: absolute;
+    width: 50%;
+    margin: 0% 25%;
+    top: -3%;
+    font-size: 21px;
+}
+#center-bg img {
+    border-radius: 20%;
+}
+.icons{
+    margin: 0px 4px;
+}
+#yellow-corner{
+    position: absolute;
+    animation: yellow-circle 5s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#green-corner{
+    position: absolute;
+    right: 0px;
+    animation: green-circle 5s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#blue-corner{
+    position: absolute;
+    animation: blue-circle 5s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+    bottom: 0px;
+}
+#purple-corner{
+    position: absolute;
+    right: 0px;
+    animation: purple-circle 5s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+    bottom: 0px;
+}
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+@keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+}
+@keyframes yellow-circle {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes green-circle {
+    from{
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+@keyframes blue-circle {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes purple-circle {
+    from{
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+@keyframes center-bg {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
