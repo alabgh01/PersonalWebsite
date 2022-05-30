@@ -1,39 +1,28 @@
 html{
     font-family: 'Montserrat', sans-serif;
 }
+body{
+    position: relative;
+    margin: 3px;
+}
 body#about-body {
     background-color: #FFFEF3;
-    position: relative;
-    margin-top: -100px;
 }
 body#skills-body {
     background-color: #F2FFF7;
-    position: relative;
-    margin-top: -100px;
 }
 body#work-body {
     background-color: #EDF9FF;
-    position: relative;
-    margin-top: -100px;
 }
 body#projects-body {
     background-color: #F9F0FF;
-    position: relative;
-    margin-top: -100px;
 }
 body#reference-body {
     background-color: #FFEDF5;
-    position: relative;
-    margin-top: -100px;
-}
-body#gallery-body {
-    position: relative;
-    margin-top: -100px;
 }
 .menu {
     list-style: none;
     text-align: center;
-    margin-top: 100px;
     font-size: 27px;
     text-shadow: 0px 5px #bdbdbdba;
 }
@@ -65,22 +54,30 @@ body#gallery-body {
     text-shadow: 0px 6px #FFA6D0;
 }
 #main-home {
-    position: relative;
-    height: 750px;
+    /* position: relative; */
+    height: 735px;
 }
 #main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
     position: relative;
-    height: 800px;
+    height: 799px;
+    margin-top: -5%;
 }
-#center-bg {
+#main-skills #center-bg, #main-work #center-bg, #main-projects #center-bg, #main-reference #center-bg{
     text-align: center;
-    margin: 130px 0px;
+    margin: 20px 0px;
     animation: center-bg 5s ease;
-    position: relative;
+    /* position: relative; */
+}
+#center-bg, #center-txt {
+    text-align: center;
+    animation: center-bg 5s ease;
 }
 #center-menu {
     margin: 0% 20%;
-    margin-top: 75px;
+    top: 0%;
+    position: absolute;
+    width: 50%;
+    z-index: 999;
 }
 #center-menu ul {
     font-size: 19px;
@@ -104,8 +101,9 @@ body#gallery-body {
     position: absolute;
     width: 50%;
     margin: 0% 25%;
-    top: -3%;
+    top: 19%;
     font-size: 21px;
+    z-index: 999;
 }
 #center-bg img {
     border-radius: 20%;
@@ -113,18 +111,44 @@ body#gallery-body {
 .icons{
     margin: 0px 4px;
 }
-#yellow-corner{
+/* #yellow-corner{
     position: absolute;
     animation: yellow-circle 5s ease;
     transform-origin: center;
     transform-box: fill-box;
+} */
+#yellow-corner{
+    animation: yellow-circle 5s ease;
+    transform-origin: center;
+    transform-box: fill-box;
 }
-#green-corner{
+/* #green-corner{
     position: absolute;
     right: 0px;
     animation: green-circle 5s ease;
     transform-origin: center;
     transform-box: fill-box;
+} */
+#green-corner {
+    position: absolute;
+    right: 0px;
+    animation: green-circle 5s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+    /* position: relative; */
+    /* z-index: 10; */
+    /* margin-left: 81.5%; */
+}
+header {
+    position: absolute;
+    /* margin: 0% 15%; */
+    /* text-align: center; */
+    top: 0%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 #blue-corner{
     position: absolute;
@@ -193,4 +217,81 @@ body#gallery-body {
 @keyframes center-bg {
     from {opacity: 0%;}
     to {opacity: 100%;}
+  }
+@media only screen and (max-width: 1300px) {
+    .navbar{
+      display: block;
+    }
+    .menu{
+        display: none;
+    }
+  }
+@media only screen and (min-width: 1300px) {
+    .navbar{
+      display: none;
+    }
+    .menu{
+        display: block;
+    }
+  }
+/* Navbar container */
+.navbar {
+    /* overflow: hidden; */
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+  
+  /* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+  
+  /* Add a red background color to navbar links on hover */
+  /* .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #efdfdf;
+  }
+   */
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    /* position: absolute; */
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    /* z-index: 1; */
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #edebeb;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
