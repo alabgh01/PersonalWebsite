@@ -81,7 +81,7 @@ body#reference-body {
 }
 #center-menu ul {
     font-size: 19px;
-    width: 100%;
+    /* width: 100%; */
     list-style: none;
     font-weight: bold;
 }
@@ -105,11 +105,15 @@ body#reference-body {
     font-size: 21px;
     z-index: 999;
 }
-#center-bg img {
+#center-txt img {
     border-radius: 20%;
 }
-.icons{
+/* .icons{
     margin: 0px 4px;
+} */
+.icons:hover{
+    width: 57px;
+    height: 57px;
 }
 /* #yellow-corner{
     position: absolute;
@@ -254,7 +258,7 @@ header {
   }
 
 .dropdown .dropbtn {
-    font-size: 27px;
+    font-size: 25px;
     border: none;
     outline: none;
     color: black;
@@ -285,13 +289,33 @@ header {
     text-decoration: none;
     display: block;
     text-align: left;
-  }
+}
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #edebeb;
-  }
-  
-  /* Show the dropdown menu on hover */
+}
+/* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
-  }
+}
+/* Box styles */
+.myBox {
+    border: none;
+    /* padding: 5px; */
+    /* font: 24px/36px sans-serif; */
+    width: 50%;
+    height: 700px;
+    overflow: scroll;
+}
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+::-webkit-scrollbar-thumb {
+    background: white;  
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: white;  
+}
