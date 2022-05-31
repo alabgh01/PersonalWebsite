@@ -31,12 +31,21 @@ body#reference-body {
     padding: 20px;
     margin: 0px 15px;
 }
+/* .menu li {
+    display: inline-block;
+    padding: 20px;
+    margin: 0px 15px;
+    background: #ffffff70;
+    box-shadow: 1px 5px 8px -7px grey;
+    border-radius: 9%;
+} */
 .menu a:link, .menu a:active, .menu a:visited {
     text-decoration: none;
     color: black;
 }
 .menu a:hover {
     font-weight: bold;
+    /* box-shadow: 0px 6px 4px -5px grey; */
 }
 #about-li {
     text-shadow: 0px 6px #fbf19f;
@@ -115,12 +124,11 @@ body#reference-body {
 #center-txt img {
     border-radius: 20%;
 }
-/* .icons{
+.icons{
     margin: 0px 4px;
-} */
+}
 .icons:hover{
-    width: 57px;
-    height: 57px;
+    box-shadow: 0px 6px 4px -5px grey;
 }
 /* #yellow-corner{
     position: absolute;
