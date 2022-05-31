@@ -76,14 +76,18 @@ body#reference-body {
     margin: 0% 20%;
     top: 0%;
     position: absolute;
-    width: 50%;
+    width: 70%;
     z-index: 999;
 }
+.little-box {
+    float: left;
+    margin: 2em 7em;
+}
 #center-menu ul {
-    font-size: 19px;
+    /* font-size: 19px; */
     /* width: 100%; */
     list-style: none;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 #center-menu ul ul {
     font-size: 15px;
@@ -92,6 +96,9 @@ body#reference-body {
 }
 #center-menu ul ul li {
     padding: 3px 0px;
+}
+#center-menu li{
+    padding: 0.2em 0em;
 }
 #res-a {
     text-decoration: none;
@@ -303,7 +310,7 @@ header {
     border: none;
     /* padding: 5px; */
     /* font: 24px/36px sans-serif; */
-    width: 50%;
+    /* width: 50%; */
     height: 700px;
     overflow: scroll;
 }
