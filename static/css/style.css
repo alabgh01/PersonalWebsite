@@ -252,6 +252,11 @@ header {
     position: fixed;
     width: 100%;
     z-index: 999999;
+    /* margin: 0% 40%; */
+    /* border-radius: 0% 0% 30% 30%; */
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 8px 16px 0px #7272725c;
 }
   
   /* Links inside the navbar */
@@ -269,7 +274,7 @@ header {
     border: none;
     outline: none;
     color: black;
-    padding: 40px 30px;
+    padding: 10px 30px;
     background-color: inherit;
     margin: 0;
 }
@@ -284,18 +289,19 @@ header {
     display: none;
     /* position: absolute; */
     background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px #727272;
     /* z-index: 1; */
 }
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
     color: black;
-    padding: 12px 16px;
+    /* padding: 12px 16px; */
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
+    font-weight: normal;
 }
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
