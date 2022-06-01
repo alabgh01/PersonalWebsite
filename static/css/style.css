@@ -5,6 +5,7 @@ html{
 body{
     position: relative;
     margin: 3px;
+    height: 785px;
 }
 /* different background colors for pages */
 body#about-body {
@@ -48,14 +49,14 @@ header {
 /* Links inside the navbar */
 .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 17px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 .dropdown .dropbtn {
-    font-size: 25px;
+    font-size: 50px;
     border: none;
     outline: none;
     color: black;
