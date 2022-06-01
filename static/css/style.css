@@ -193,7 +193,7 @@ header {
     /* padding: 5px; */
     /* font: 24px/36px sans-serif; */
     /* width: 50%; */
-    height: 700px;
+    height: 750px;
     overflow: scroll;
 }
 /* Scrollbar */
@@ -345,25 +345,3 @@ header {
         display: block;
     }
   }
-::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-
-::-webkit-scrollbar:vertical {
-    width: 12px;
-}
-
-::-webkit-scrollbar:horizontal {
-    height: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, .5);
-    border-radius: 10px;
-    border: 2px solid #ffffff;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: #ffffff;
-}
