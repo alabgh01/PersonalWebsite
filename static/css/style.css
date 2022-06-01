@@ -5,6 +5,7 @@ html{
 body{
     position: relative;
     margin: 3px;
+    height: 785px;
 }
 /* different background colors for pages */
 body#about-body {
