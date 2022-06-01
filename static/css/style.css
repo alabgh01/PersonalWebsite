@@ -1,10 +1,12 @@
 html{
     font-family: 'Montserrat', sans-serif;
 }
+/* general body css */
 body{
     position: relative;
     margin: 3px;
 }
+/* different background colors for pages */
 body#about-body {
     background-color: #FFFEF3;
 }
@@ -20,6 +22,74 @@ body#projects-body {
 body#reference-body {
     background-color: #FFEDF5;
 }
+/* header css */
+header {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+/* Navbar container */
+.navbar {
+    /* overflow: hidden; */
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    /* margin: 0% 40%; */
+    /* border-radius: 0% 0% 30% 30%; */
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 8px 16px 0px #7272725c;
+}
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown .dropbtn {
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 10px 30px;
+    background-color: inherit;
+    margin: 0;
+}
+/* Dropdown content*/
+.dropdown-content {
+    display: none;
+    /* position: absolute; */
+    background-color: white;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px #727272;
+    /* z-index: 1; */
+}
+/* Links inside the dropdown content */
+.dropdown-content a {
+    float: none;
+    color: black;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+}
+.dropdown-content a:hover {
+    background-color: #edebeb;
+}
+/* Show the dropdown menu on hover or on onclick using js not heree*/
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+/* header menu css */
 .menu {
     list-style: none;
     text-align: center;
@@ -31,6 +101,7 @@ body#reference-body {
     padding: 20px;
     margin: 0px 15px;
 }
+/* new change, decided to delete */
 /* .menu li {
     display: inline-block;
     padding: 20px;
@@ -47,6 +118,8 @@ body#reference-body {
     font-weight: bold;
     /* box-shadow: 0px 6px 4px -5px grey; */
 }
+/* change shadow color for the name of the page you are on */
+/* could change to js in future versions */
 #about-li {
     text-shadow: 0px 6px #fbf19f;
 }
@@ -62,6 +135,7 @@ body#reference-body {
 #reference-li {
     text-shadow: 0px 6px #FFA6D0;
 }
+/* main on different pages is the same except on home */
 #main-home {
     /* position: relative; */
     height: 735px;
@@ -71,6 +145,7 @@ body#reference-body {
     height: 799px;
     margin-top: -5%;
 }
+/* the background svg for all pages except home */
 #main-skills #center-bg, #main-work #center-bg, #main-projects #center-bg, #main-reference #center-bg{
     text-align: center;
     margin: 20px 0px;
@@ -81,16 +156,13 @@ body#reference-body {
     text-align: center;
     animation: center-bg 5s ease;
 }
+/* for menues and lists about work, and projects */
 #center-menu {
     margin: 0% 20%;
     top: 0%;
     position: absolute;
     width: 70%;
     z-index: 999;
-}
-.little-box {
-    float: left;
-    margin: 2em 7em;
 }
 #center-menu ul {
     /* font-size: 19px; */
@@ -109,10 +181,33 @@ body#reference-body {
 #center-menu li{
     padding: 0.2em 0em;
 }
-#res-a {
-    text-decoration: none;
-    color: #7bccf5;
+/* splitting skills types into boxes to fill the page */
+.little-box {
+    float: left;
+    margin: 2em 7em;
 }
+/* Box scrollbar */
+.myBox {
+    border: none;
+    /* padding: 5px; */
+    /* font: 24px/36px sans-serif; */
+    /* width: 50%; */
+    height: 700px;
+    overflow: scroll;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+::-webkit-scrollbar-thumb {
+    background: white;  
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: white;  
+}
+/* center text in home page */
 #center-txt {
     position: absolute;
     width: 50%;
@@ -124,12 +219,19 @@ body#reference-body {
 #center-txt img {
     border-radius: 20%;
 }
+/* social media icons */
 .icons{
     margin: 0px 4px;
 }
 .icons:hover{
     box-shadow: 0px 6px 4px -5px grey;
 }
+/* resume link css */
+#res-a {
+    text-decoration: none;
+    color: #7bccf5;
+}
+/* position used to be absolute for yellow circle in corner but no need for that */
 /* #yellow-corner{
     position: absolute;
     animation: yellow-circle 5s ease;
@@ -141,13 +243,6 @@ body#reference-body {
     transform-origin: center;
     transform-box: fill-box;
 }
-/* #green-corner{
-    position: absolute;
-    right: 0px;
-    animation: green-circle 5s ease;
-    transform-origin: center;
-    transform-box: fill-box;
-} */
 #green-corner {
     position: absolute;
     right: 0px;
@@ -157,17 +252,6 @@ body#reference-body {
     /* position: relative; */
     /* z-index: 10; */
     /* margin-left: 81.5%; */
-}
-header {
-    position: absolute;
-    /* margin: 0% 15%; */
-    /* text-align: center; */
-    top: 0%;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
 }
 #blue-corner{
     position: absolute;
@@ -184,6 +268,7 @@ header {
     transform-box: fill-box;
     bottom: 0px;
 }
+/* Hi hand wave */
 .wave {
     animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
     animation-duration: 2.5s;        /* Change to speed up or slow down */
@@ -191,6 +276,7 @@ header {
     transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
     display: inline-block;
   }
+/* keyframe rules */
 @keyframes wave-animation {
       0% { transform: rotate( 0.0deg) }
      10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
@@ -237,6 +323,7 @@ header {
     from {opacity: 0%;}
     to {opacity: 100%;}
   }
+/* media only rules */
 @media only screen and (max-width: 1300px) {
     .navbar{
       display: block;
@@ -253,90 +340,3 @@ header {
         display: block;
     }
   }
-/* Navbar container */
-.navbar {
-    /* overflow: hidden; */
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    z-index: 999999;
-    /* margin: 0% 40%; */
-    /* border-radius: 0% 0% 30% 30%; */
-    text-align: center;
-    font-weight: bold;
-    box-shadow: 0px 8px 16px 0px #7272725c;
-}
-  
-  /* Links inside the navbar */
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-.dropdown .dropbtn {
-    font-size: 25px;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 10px 30px;
-    background-color: inherit;
-    margin: 0;
-}
-  
-  /* Add a red background color to navbar links on hover */
-  /* .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #efdfdf;
-  }
-   */
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    /* position: absolute; */
-    background-color: white;
-    /* min-width: 160px; */
-    box-shadow: 0px 8px 16px 0px #727272;
-    /* z-index: 1; */
-}
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    /* padding: 12px 16px; */
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    font-weight: normal;
-}
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #edebeb;
-}
-/* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-}
-/* Box styles */
-.myBox {
-    border: none;
-    /* padding: 5px; */
-    /* font: 24px/36px sans-serif; */
-    /* width: 50%; */
-    height: 700px;
-    overflow: scroll;
-}
-/* Scrollbar styles */
-::-webkit-scrollbar {
-    width: 13px;
-    height: 13px;
-}
-::-webkit-scrollbar-thumb {
-    background: white;  
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: white;  
-}
