@@ -101,6 +101,8 @@ header {
     display: inline-block;
     padding: 20px;
     margin: 0px 15px;
+    background: radial-gradient(#ffd0e6, transparent);
+    border-radius: 10px;
 }
 /* new change, decided to delete */
 /* .menu li {
@@ -136,34 +138,40 @@ header {
 #reference-li {
     text-shadow: 0px 6px #FFA6D0;
 }
-/* main on different pages is the same except on home */
-#main-home {
-    /* position: relative; */
-    height: 735px;
-}
-#main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
+/* for main in all pages */
+#main-home, #main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
     position: relative;
-    height: 799px;
+    height: 640px;
     margin-top: -5%;
 }
-/* the background svg for all pages except home */
-#main-skills #center-bg, #main-work #center-bg, #main-projects #center-bg, #main-reference #center-bg{
+/* center background shape on all pages */
+#center-bg{
     text-align: center;
-    margin: 20px 0px;
-    animation: center-bg 5s ease;
-    /* position: relative; */
-}
-#center-bg, #center-txt {
-    text-align: center;
+    margin-top: 40px;
     animation: center-bg 5s ease;
 }
-/* for menues and lists about work, and projects */
-#center-menu {
-    margin: 0% 20%;
-    top: 0%;
+/* center text in home page */
+#center-txt {
+    text-align: center;
+    width: 50%;
+    font-size: 21px;
+    margin: 0% 25%;
+    top: 1%;
+}
+#center-txt img {
+    border-radius: 20%;
+}
+/* for all texts or menues in main on all pages*/
+#center-menu, #center-txt {
     position: absolute;
-    width: 70%;
     z-index: 999;
+    height: 600px;
+}
+/* center menues on skills, work, and projects */
+#center-menu{
+    width: 70%;
+    margin: 0% 20%;
+    top: -4%;
 }
 #center-menu ul {
     /* font-size: 19px; */
@@ -181,6 +189,7 @@ header {
 }
 #center-menu li{
     padding: 0.2em 0em;
+    position: relative;
 }
 /* splitting skills types into boxes to fill the page */
 .little-box {
@@ -193,7 +202,7 @@ header {
     /* padding: 5px; */
     /* font: 24px/36px sans-serif; */
     /* width: 50%; */
-    height: 750px;
+    /* height: 750px; */
     overflow: scroll;
 }
 /* Scrollbar */
@@ -212,18 +221,6 @@ header {
 ::-webkit-scrollbar-thumb:hover {
     background: white;  
 }
-/* center text in home page */
-#center-txt {
-    position: absolute;
-    width: 50%;
-    margin: 0% 25%;
-    top: 19%;
-    font-size: 21px;
-    z-index: 999;
-}
-#center-txt img {
-    border-radius: 20%;
-}
 /* social media icons */
 .icons{
     margin: 0px 4px;
@@ -235,6 +232,60 @@ header {
 #res-a {
     text-decoration: none;
     color: #7bccf5;
+}
+.res-s{
+    font-weight: bold;
+}
+/* calendar and location icons on work */
+.loc-a{
+    text-decoration: none;
+    color: black;
+}
+.calendar-icon {
+    position: absolute;
+    left: 70%;
+    top: 30px;
+}
+.calendar-icon p {
+    float: left;
+    margin: 5px;
+    font-weight: bold;
+}
+.calendar-icon span {
+    float: left;
+}
+.location-icon {
+    position: absolute;
+    left: 70%;
+    top: 63px;
+}
+.location-icon p {
+    float: left;
+    margin: 5px;
+    font-weight: bold;
+}
+.location-icon span {
+    float: left;
+}
+/* footer css */
+footer {
+    background: radial-gradient(#ffd0e6, transparent);
+    height: 140px;
+    text-align: center;
+    margin: 0px 7%;
+    border-radius: 17px;
+    width: 86%;
+    position: relative;
+}
+footer p {
+    padding: 13px;
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    /* left: 34%; */
+    top: 0%;
+    z-index: 99999;
+    width: 100%;
 }
 /* position used to be absolute for yellow circle in corner but no need for that */
 /* #yellow-corner{
