@@ -243,8 +243,8 @@ header {
 }
 .calendar-icon {
     position: absolute;
-    left: 70%;
-    top: 30px;
+    left: 66%;
+    top: 7%;
 }
 .calendar-icon p {
     float: left;
@@ -256,8 +256,8 @@ header {
 }
 .location-icon {
     position: absolute;
-    left: 70%;
-    top: 63px;
+    left: 66%;
+    top: 23%;
 }
 .location-icon p {
     float: left;
