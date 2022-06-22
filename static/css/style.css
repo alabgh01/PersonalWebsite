@@ -156,7 +156,7 @@ header {
     width: 50%;
     font-size: 21px;
     margin: 0% 25%;
-    top: 1%;
+    top: -2%;
 }
 #center-txt img {
     border-radius: 20%;
@@ -171,7 +171,7 @@ header {
 #center-menu{
     width: 70%;
     margin: 0% 20%;
-    top: -4%;
+    top: -8%;
 }
 #center-menu ul {
     /* font-size: 19px; */
@@ -403,6 +403,12 @@ footer p {
     }
     .menu{
         display: none;
+    }
+    #main-home, #main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
+        min-height: 1500px;
+    }
+    #center-menu, #center-txt {
+        height: 1460px;
     }
   }
 @media only screen and (min-width: 1300px) {
