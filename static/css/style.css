@@ -171,7 +171,7 @@ header {
 #center-menu{
     width: 70%;
     margin: 0% 20%;
-    top: -8%;
+    top: -5%;
 }
 #center-menu ul {
     /* font-size: 19px; */
@@ -405,10 +405,10 @@ footer p {
         display: none;
     }
     #main-home, #main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
-        min-height: 1500px;
+        min-height: 1400px;
     }
     #center-menu, #center-txt {
-        height: 1460px;
+        height: 1380px;
     }
   }
 @media only screen and (min-width: 1300px) {
