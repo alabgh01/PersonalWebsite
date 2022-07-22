@@ -146,7 +146,8 @@ header {
 /* for main in all pages */
 #main-home, #main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
     position: relative;
-    margin-top: -5%;
+    /* height: 666px; */
+    margin-top: -1%;
 }
 /* center background shape on all pages */
 #center-bg{
@@ -169,7 +170,7 @@ header {
 #center-menu, #center-txt {
     position: absolute;
     z-index: 999;
-    height: 90%;
+    height: 80%;
 }
 /* center menues on skills, work, and projects */
 #center-menu{
@@ -424,16 +425,18 @@ footer {
     .menu{
         display: none;
     }
-    #center-bg{
-        margin-top: 25%;
-    }
-    /* #main-home, #main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
-        min-height: 1400px;
-    }
-    #center-menu, #center-txt {
-        height: 1380px;
-    } */
   }
+@media only screen and (min-height: 1500px) {
+    #center-bg{
+        margin-top: 20%;
+    }
+    #main-home, #main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
+        min-height: 1300px;
+    }
+    /* #center-menu, #center-txt {
+        height: 90%;
+    } */
+}
 @media only screen and (min-width: 1000px) {
     .navbar{
       display: none;
