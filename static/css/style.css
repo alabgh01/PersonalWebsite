@@ -146,7 +146,6 @@ header {
 /* for main in all pages */
 #main-home, #main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
     position: relative;
-    /* height: 70%; */
     margin-top: -5%;
 }
 /* center background shape on all pages */
