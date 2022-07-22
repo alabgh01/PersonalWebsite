@@ -1,10 +1,15 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
 html{
     font-family: 'Montserrat', sans-serif;
+    height: 100%;
 }
 /* general body css */
 body{
     position: relative;
-    margin: 3px;
+    min-height: 100%;
     height: auto;
 }
 /* different background colors for pages */
@@ -141,13 +146,13 @@ header {
 /* for main in all pages */
 #main-home, #main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
     position: relative;
-    height: 500px;
+    height: 70%;
     margin-top: -5%;
 }
 /* center background shape on all pages */
 #center-bg{
     text-align: center;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     animation: center-bg 5s ease;
 }
 /* center text in home page */
@@ -165,7 +170,7 @@ header {
 #center-menu, #center-txt {
     position: absolute;
     z-index: 999;
-    height: 480px;
+    height: 80%;
 }
 /* center menues on skills, work, and projects */
 #center-menu{
@@ -287,23 +292,39 @@ header {
 /* footer css */
 footer {
     background: radial-gradient(#ffd0e6, transparent);
+    /* height: 140px; */
+    text-align: center;
+    margin: 0px 7%;
+    border-radius: 17px;
+    width: 85%;
+    position: absolute;
+    /* padding: 13px; */
+    /* margin: 20px; */
+    position: absolute;
+    bottom: 0px;
+    /* left: 34%; */
+    /* top: 0%; */
+    z-index: 999;
+    /* width: 29%; */
+}
+/* footer {
+    background: radial-gradient(#ffd0e6, transparent);
     height: 140px;
     text-align: center;
     margin: 0px 7%;
     border-radius: 17px;
     width: 86%;
     position: relative;
-}
-footer p {
+} */
+/* footer p {
     padding: 13px;
     margin: 20px;
     position: absolute;
     bottom: 0;
-    /* left: 34%; */
     top: 0%;
     z-index: 99999;
     width: 100%;
-}
+} */
 /* position used to be absolute for yellow circle in corner but no need for that */
 /* #yellow-corner{
     position: absolute;
@@ -397,21 +418,24 @@ footer p {
     to {opacity: 100%;}
   }
 /* media only rules */
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1000px) {
     .navbar{
       display: block;
     }
     .menu{
         display: none;
     }
-    #main-home, #main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
+    #center-bg{
+        margin-top: 25%;
+    }
+    /* #main-home, #main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
         min-height: 1400px;
     }
     #center-menu, #center-txt {
         height: 1380px;
-    }
+    } */
   }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1000px) {
     .navbar{
       display: none;
     }
