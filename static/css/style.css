@@ -426,12 +426,12 @@ footer {
         display: none;
     }
   }
-@media only screen and (min-height: 1500px) {
+@media only screen and (min-height: 1300px) {
     #center-bg{
         margin-top: 20%;
     }
     #main-home, #main-skills, #main-work, #main-projects, #main-reference, #main-gallery{
-        min-height: 1300px;
+        min-height: 1200px;
     }
     /* #center-menu, #center-txt {
         height: 90%;
